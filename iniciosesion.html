@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicia Sesion</title>
         <link rel="stylesheet" href="css\estilos.css"> 
+        <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     </head>
 
 <body id="grillainiciosesion">    
 <header class="borde" id="header"><div class="imagenfondo">
          <article class="centrado">Electro Moreno Outlet</article> 
-         <article class="centrado"><img src="Imagenes\logook.png" alt="Electro Moreno Outlet" width="60"></article>
+         <article class="centrado"><img class="animate__bounce" src="Imagenes\logook.png" alt="Electro Moreno Outlet" width="60"></article>
     </div>
 
         <nav class="borde centrado">
@@ -36,7 +37,7 @@
                   <INPUT type="text" id="email"><BR>
         <LABEL for="contraseña">Contraseña: </LABEL>
                   <INPUT type="text" id="contraseña"><BR>
-        <INPUT type="submit" value="Inicia Sesion"> <INPUT type="reset">
+        <INPUT class="animate__pulse" type="submit" value="Inicia Sesion"> <INPUT class="animate__pulse" type="reset">
         </P>
      </FORM></section>
  
@@ -56,7 +57,7 @@
                   <INPUT type="text" id="contraseña"><BR>
         <LABEL for="Repite Contraseña">Repite Contraseña: </LABEL>
                     <INPUT type="text" id="repite contraseña"><BR>            
-        <INPUT type="submit" value="Registrate"> <INPUT type="reset">
+        <INPUT class="animate__pulse" type="submit" value="Registrate"> <INPUT class="animate__pulse" type="reset">
         </P>
      </FORM></section>
 
@@ -78,5 +79,9 @@
      </ul>
     </nav>
 </footer>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW() .init();
+</script>
 </body>
 </html>

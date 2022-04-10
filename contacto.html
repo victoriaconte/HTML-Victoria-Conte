@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
         <link rel="stylesheet" href="css\estilos.css"> 
+        <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 </head>
 
 <body id="grillacontacto">
    <header class="borde" id="header"> <div class="imagenfondo">
         <article class="centrado">Electro Moreno Outlet</article> 
-        <article class="centrado"><img src="Imagenes\logook.png" alt="Electro Moreno Outlet" width="60"></article>
+        <article class="centrado"><img class="animate__bounce" src="Imagenes\logook.png" alt="Electro Moreno Outlet" width="60"></article>
         </div>
     
             <nav class="borde centrado">
@@ -39,7 +40,7 @@
                 <label for="asunto">Asunto: </label>
                           <input type="text" id="asunto"><BR>
                 <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea> </label> <BR>            
-                            <INPUT type="submit" value="Enviar Mensaje"> 
+                            <INPUT class="animate__pulse" type="submit" value="Enviar Mensaje"> 
                 </P>
              </FORM>
             </section>
@@ -59,5 +60,9 @@
      </ul>
     </nav>
   </footer>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW() .init();
+  </script>
 </body>
 </html>
