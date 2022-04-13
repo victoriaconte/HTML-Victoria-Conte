@@ -6,78 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELECTRO MORENO OUTLET </title> 
     <link rel="stylesheet" href="css\estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 </head>
 
 <body id="grilla">
- <header class="borde" id="header"> <div class="imagenfondo">
-             <article class="centrado">Electro Moreno Outlet</article> 
-             <article class="centrado"><img class="animate__bounce" src="Imagenes\logook.png" alt="Electro Moreno Outlet" width="60"></article>
+ 
+    <header class="borde" id="header"> 
+    <div class="imagenfondo container-fluid" style="height:130px">
+             <div class="centrado row h2">Electro Moreno Outlet</div> 
+             <div class="centrado row"><img class="animate__bounce img-fluid mx-auto d-block" src="Imagenes\logook.png" alt="Electro Moreno Outlet" width="60"></div>
              </div>   
             
-             <nav class="borde centrado">
-            <ul>
-                <li> <a href="index.html" class="link"> Inicio </a></li>
-                <li> <a href="nosotros.html" class="link"> Nosotros   </a></li>
-                <li> <a href="productos.html" class="link"> Productos </a></li>
-                <li> <a href="iniciosesion.html" class="link"> Inicia Sesion <img src="Imagenes\carritodecomprasok.png" alt="carrito" width="25"> </a></li>
-                <li> <a href="contacto.html" class="link"> Contacto </a></li>
+    <div class="container-fluid" style="background-color:#8b8c89">
+       <ul class="nav nav-pills nav-justified">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nosotros.html" style="color: white;">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="productos.html" role="button" aria-expanded="false" style="color: white;">Productos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productos.html" >Televisores</a></li>
+                <li><a class="dropdown-item" href="productos.html">Heladeras</a></li>
+                <li><a class="dropdown-item" href="productos.html">Lavarropas y Lavavajillas</a></li>
+                <li><a class="dropdown-item" href="productos.html">Aires y Ventilación</a></li>
+                <li><a class="dropdown-item" href="productos.html">Notebooks</a></li>
+                <li><a class="dropdown-item" href="productos.html">Celulares</a></li>
+                <li><hr class="dropdown-divider"></li>
             </ul>
-        </nav>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="iniciosesion.html" style="color: white;">Inicia Sesion <img src="Imagenes\carritodecomprasok.png" alt="carrito" width="25"></a>
+                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="contacto.html" style="color: white;">Contacto</a>
+                 </li>
+                </ul>
+    </div>
     </header>
 
- <section class="borde" id="productos"> 
-            <div class="borde centrado"><a href="productos.html" class="link"> Televisores </a></div>
-            <div class="borde imagen" ><img src="Imagenes\tvlg.png" alt="Televisores" width="150" id="imagen"></div>
-            <div class="borde centrado"><a href="productos.html" class="link"> Heladeras </a></div>
-            <div class="borde imagen"><img src="Imagenes\heladeragafa.png" alt="Heladeras" width="180"></div>
-            <div class="borde centrado"> <a href="productos.html" class="link">Lavarropas y Lavavajillas</a></div>
-            <div class="borde imagen"><img src="Imagenes\lavarropasdreanok.png" alt="Lavarropas y Lavavajillas" width="150"></div>
-            <div class="borde centrado"><a href="productos.html" class="link"> Aires y Ventilación </a></div>
-            <div class="borde imagen"><img src="Imagenes\airehitachi.png" alt="Aires y Ventilación" width="160"></div>
-            <div class="borde centrado"><a href="productos.html" class="link"> Notebooks </a></div>
-            <div class="borde imagen"><img src="Imagenes\notebooklenovook.png" alt="Notebooks" width="160"></div>
-            <div class="borde centrado"><a href="productos.html" class="link"> Celulares </a></div>
-            <div class="borde imagen"><img src="Imagenes\celularsamsunga12.png" alt="Celulares" width="160"></div>
- </section>   
+<div class="container" style= "margin: 70px;">
+    <div class="row">
+            <div class="col-md-2"> <a href="productos.html" class="link"> Televisores </a> </div>
+            <div class="col-md-2"> <img src="Imagenes\tvlg.png" alt="Televisores" width="150" id="imagen"></div>
+            <div class="col-md-2"><a href="productos.html" class="link"> Heladeras </a></div>
+            <div class="col-md-2"><img src="Imagenes\heladeragafa.png" alt="Heladeras" width="180"></div>
+            <div class="col-md-2"> <a href="productos.html" class="link">Lavarropas y Lavavajillas</a></div>
+            <div class="col-md-2"><img src="Imagenes\lavarropasdreanok.png" alt="Lavarropas y Lavavajillas" width="150"></div>
+    </div>    
+    <div class="row">    
+            <div class="col-md-2"><a href="productos.html" class="link"> Aires y Ventilación </a></div>
+            <div class="col-md-2"><img src="Imagenes\airehitachi.png" alt="Aires y Ventilación" width="160"></div>
+            <div class="col-md-2"><a href="productos.html" class="link"> Notebooks </a></div>
+            <div class="col-md-2"><img src="Imagenes\notebooklenovook.png" alt="Notebooks" width="160"></div>
+            <div class="col-md-2"><a href="productos.html" class="link"> Celulares </a></div>
+            <div class="col-md-2"><img src="Imagenes\celularsamsunga12.png" alt="Celulares" width="160"></div>
+    </div>
+</div>    
+</section>   
 
- <section id="productos2">
-    <h3 class="centrado animate__flash"><strong>¡OFERTAS POR TIEMPO LIMITADO!</strong></h3>
-    <p>Aprovecha estos productos a un gran precio:</p></div>
+ <section id="productos2" class="conteiner-fluid">
+    <h3 class="centrado animate__flash row"><strong>¡OFERTAS POR TIEMPO LIMITADO!</strong></h3>
+    <p>Aprovecha estos productos a un gran precio:</p>
 
-    <section class="flexbox"> 
-    <span><h4>Heladera Samsung</h4></span>
-            <div><p>Precio: $100.000 </p> 
-            <p class="tachado">$110.000</p>
-            <p class="animate__shakeY"> <a href="iniciosesion.html"> Comprar <img src="Imagenes\carritodecomprasok.png" alt="carrito" width="20"></a></p></div>
-            <img src="Imagenes\heladeragafa.png" alt="Heladera Gafa" width="150">
+    <section class="flexbox row"> 
+    <span><h4 class="col-md-2"> Heladera Samsung</h4></span>
+            <div class="col-md-2"><p>Precio: $100.000 </p> 
+            <p class="tachado">$110.000 </p>
+            <p class="animate__shakeY"> <button type="button" class="btn btn-outline-secondary"><a href="iniciosesion.html"> Comprar</button></a> <img src="Imagenes\carritodecomprasok.png" alt="carrito" width="20"></a></p></div>
+            <div class="col-md-2"><img src="Imagenes\heladeragafa.png" alt="Heladera Gafa" width="150"></div>
 
-    <span><h4>Lavarropas Drean</h4></span>
-            <div><p>Precio: $40.000 </p> 
-            <p class="tachado"> $52.000 </p>
-            <p class="animate__shakeY">  <a href="iniciosesion.html"> Comprar <img src="Imagenes\carritodecomprasok.png" alt="carrito" width="20"></a></h5></div> 
-            <img src="Imagenes\lavarropasdreanok.png" alt="Lavarropas Drean" width="100" > </div>
+    <span><h4 class="col-md-2">Lavarropas Drean</h4></span>
+            <div class="col-md-2"><p>Precio: $40.000 </p> 
+            <p class="tachado">$52.000 </p>
+            <p class="animate__shakeY"> <button type="button" class="btn btn-outline-secondary"> <a href="iniciosesion.html"> Comprar</button> </a> <img src="Imagenes\carritodecomprasok.png" alt="carrito" width="20"></a></h5></div> 
+            <div class="col-md-2"><img src="Imagenes\lavarropasdreanok.png" alt="Lavarropas Drean" width="100" > </div>
     
         </section>  
 
     </section>
 
  <footer class="borde derecha imagenfondo" id="footerindex">
-            <h4>Visitanos en nuestras redes:</h4>
-        
-             <ul>
-                 <li>
-                 <img src="Imagenes\instagram.png" alt="Instagram" width="20"> <a href="https://instagram.com" class="link"> Instagram </a>
-                 </li>
-                 <li>
-                 <img  src="Imagenes\logotipo-facebook.png" alt="Facebook" width="40">  <a href="https://facebook.com/" class="link"> Facebook </a>
-                 </li>
-        
-            </ul>
+<div class="container">
+  <h4>Visitanos en nuestras redes:</h4>
+      <ul>
+      <li>
+      <img src="Imagenes\instagram.png" alt="Instagram" width="20"> <a href="https://instagram.com" class="link"> Instagram </a>
+      </li>
+      <li>
+      <img  src="Imagenes\logotipo-facebook.png" alt="Facebook" width="40">  <a href="https://facebook.com/" class="link"> Facebook </a>
+     </li>
+    </ul>
+</div>
  </footer>
 
  <script src="js/wow.min.js"></script>
  <script>
  new WOW() .init();
  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+</html>

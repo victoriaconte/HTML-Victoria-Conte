@@ -279,8 +279,9 @@ main{
     height: auto;
 }
 
-header{
+#header{
     grid-area: header;
+    grid-template-rows: 300px;
 }
 
 #productos{
