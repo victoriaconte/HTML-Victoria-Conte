@@ -355,7 +355,7 @@ main{
 }
 
 #formulario{
-    grid-area: productos3;
+    grid-area: formulario;
     display: grid;
 }
 
@@ -377,6 +377,7 @@ main{
 #footernosotros{
     grid-area: footernosotros;
     display: grid;
+    margin-top: 50px;
 }
 
 @media only screen and (max-width:1024px) {
@@ -407,6 +408,7 @@ main{
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         height: 880vh;
+        width: auto;
     }
 
     #grillacontacto{
@@ -450,6 +452,8 @@ main{
         height: auto;
     }    
 
+
+
 }
 
 @media only screen and (max-width:768px) {
@@ -460,34 +464,36 @@ main{
         "productos"
         "productos2"
         "footerindex";
-        grid-template-rows: 20% auto auto 10%;
+        grid-template-rows: 50% auto auto 10%;
         grid-template-columns: 100%;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         height: 100vh;
         width: 100%;
+        text-align: center;
+    }
+
+    #header{
+        grid-area: header;
+        grid-template-rows: 200px;
+        display: flexbox;
     }
 
     #productos{
         grid-area: productos;
-        display:grid; 
-        grid-template-columns: 150px 200px;
-        grid-template-rows: 200px 200px;
-        margin-top: 100px;
+        display: flexbox; 
+        grid-template-columns: 100px;
+        grid-template-rows: 200px;
+        margin-top: 1000px;
         margin-bottom: 10px;
     }
 
     #productos2{
         grid-area: productos2;
-        display: block;
-        flex-direction: column;
+        display: grid; 
+        grid-template-columns: 500px;
+        grid-template-rows: 50px;
         text-align: center;
-        align-items: center;
-        grid-template-columns: none 150px;
-        grid-template-rows: none 200px;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        border: #274c77 solid 5px;
     }
 
     .flexbox{
@@ -503,54 +509,57 @@ main{
         "productos3"
         "destacados"
         "footerprod";
-        grid-template-rows: 3% 30px 30px 3%;
+        grid-template-rows: 30% 90% 10% 10%;
         grid-template-columns: 100%;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
-        height: 100%;
-        width: 100%;
+        align-content: center;
     }
 
     #productos3{
         grid-area: productos3;
-        display: block; 
-        grid-template-columns: none;
-        grid-template-rows: 5px none;
+        display: grid; 
+        grid-template-columns: 400px;
+        grid-template-rows: 200px;
         align-content: center;
         align-items: center;
-        margin-top: 1px;
+        height: 8000px;
     }
     
     #destacados{
         grid-area: destacados;
-        display: block;
-        flex-direction: column;
-        grid-template-columns: auto;
-        grid-template-rows: none 10px;
-        margin-top: 5900px; 
-        border: #274c77 solid 5px;
-        width: auto;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 900px;
+        grid-template-rows: none 200px 200px; 
     }
 
     #footerprod{
         grid-area: footerprod;
         display: grid;
-        margin-top: 6600px;   
+        
     }
 
     #grillacontacto{
         display: grid;
         grid-template-areas: 
         "header"
-        "contacto"
-        "footercontacto ";
-        grid-template-rows: 28% 53% 20%;
+        "formulario"
+        "footercontacto";
+        grid-template-rows: 40% 50% 20%;
         grid-template-columns: 100%;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         height: auto;
         width: auto;
+        align-items: center;
+    }
+
+    #contacto{
+        grid-area: contacto;
+        display: grid;
+        width: max-content;
+        align-items: center;
+        
     }
 
     #grillainiciosesion{
@@ -560,11 +569,19 @@ main{
         "formulario"
         "formulario"
         "footeriniciosesion";
-        grid-template-rows: 24% 36% 20%;
+        grid-template-rows: 34% 35% 20%;
         grid-template-columns: 100%;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         height: auto;
+    }
+
+    #formulario{
+        grid-area: formulario;
+        display: grid;
+        width: max-content;
+        align-items: center;
+        margin-left: 100px;
     }
 
     #grillanosotros{
@@ -574,12 +591,31 @@ main{
         "nosotros"
         "ubicacion"
         "footernosotros";
-        grid-template-rows: 23% 41% 20%;
+        grid-template-rows: 39% 32% 20%;
         grid-template-columns: 100%;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         height: auto;
+        text-align: center;
     }
+
+    #nosotros{
+        grid-area: nosotros;
+        display: grid;
+        grid-template-columns: 410px;
+        margin-left: 10px;
+    
+    }
+    
+    #ubicacion{
+        grid-area: ubicacion;
+        display: grid;
+        width: 500px;
+        margin-left: -8px;   
+        font-display: ;
+     
+    }
+
     
 }
 
@@ -686,4 +722,7 @@ main{
   
 .efectovideo{
     box-shadow: 1px 1px 36px 2px #8b8c89;
+
 }
+
+
