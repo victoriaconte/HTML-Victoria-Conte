@@ -51,6 +51,8 @@ footer h4 {
     color: #e7ecef;
 }
 
+
+
 @keyframes flash {
     10% {
       opacity: 0;
@@ -150,6 +152,13 @@ footer h4 {
     animation-iteration-count: infinite;
     animation-duration: 1s;
   }
+
+  .tachado {
+    text-decoration: line-through;
+    text-decoration-color: #8b8c89;
+  }
+
+  
 
   
 

@@ -127,3 +127,7 @@ footer h4 {
   transform-origin: center bottom;
   animation-iteration-count: infinite;
   animation-duration: 1s; }
+
+.tachado {
+  text-decoration: line-through;
+  text-decoration-color: #8b8c89; }
