@@ -1,0 +1,727 @@
+
+.imagenfondo{
+    background-image: url(../Imagenes/fondo.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: cover;
+    height: 120px;
+    margin: 5px;
+}
+
+article{
+    color:#e7ecef;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+.tachado {
+    text-decoration: line-through;
+    text-decoration-color: #8b8c89;
+}
+
+h1{
+    color: #e7ecef;
+    font-size: 40px;
+    background-color: #41658a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;  
+    margin-top: 15px;  
+    border-radius: 40px;
+}
+    
+
+h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 10px;
+    padding: 5px;
+}
+
+table main{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body nav ul li{
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+display: inline-block; 
+margin: 10px;
+text-transform: uppercase; 
+}
+
+body nav ul{
+border: #8b8c89;
+background-color: #8b8c89;
+border-style:solid;
+margin: 5px;
+}
+
+*{text-decoration: none;
+}
+
+body h3 {
+    font-style: oblique;
+    color: #e7ecef;
+    font-size: 23px;
+    background-color: #274c77;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.centrado {
+    text-align: center;
+}
+
+body p{
+    font-size: 20px;
+    margin: 3px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+body table {
+    color: #8b8c89;
+    font-size: 20px;
+    padding-right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    color: #8b8c89;
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{margin: 0;}
+
+footer h4{
+color: #e7ecef;
+font-size: 20px;    
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+margin: 10px;
+}
+
+footer nav ul li {
+    display: block;
+    font-size: 15px;
+    padding: 1px;
+    text-transform: none;
+}
+
+footer nav ul {
+    border: none;
+    background: none;
+}
+
+*{list-style-type: none;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color: black;    
+}
+
+a:hover{
+    color: #e7ecef;
+}
+
+.imagen{
+    display: inline-flexbox;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-inline: 48px;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 30px;
+    font-style: italic;
+    text-align: center;
+    word-spacing: 10px;
+    background-image: url(../Imagenes/fondo.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: cover;
+}
+
+main{
+    border: #8b8c89 solid;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+span{
+    display: inline-table;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    width: 2%;
+    height: 2%;
+}
+
+body div{
+    word-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#ubicacion{
+    border: #274c77 solid;
+    margin: 10px;
+
+}
+
+
+main{
+    border-bottom: #8b8c89 solid;
+    text-align: center;
+    background-image: url(../Imagenes/fondo.jpg); 
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: cover;
+}
+
+.videos {
+    position: relative;
+    overflow: hidden;
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "productos productos"
+    "productos2 productos2"
+    "footerindex footerindex";
+    grid-template-rows: 20% auto auto auto auto auto auto auto 20%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    width: auto;
+}
+
+#grillaproductos{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "productos3 productos3"
+    "destacados destacados"
+    "footerprod footerprod";
+    grid-template-rows: 20% 40% 0% 20%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 450vh;
+    width: auto;
+}
+
+#grillacontacto{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "contacto contacto"
+    "footercontacto footercontacto";
+    grid-template-rows: 25% 60% 15%;
+    grid-template-columns: 100%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: auto;
+}
+ 
+#grillanosotros{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nosotros nosotros"
+    "ubicacion ubicacion"
+    "footernosotros footernosotros";
+    grid-template-rows: 20% 45% 20%;
+    grid-template-columns: 100%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: auto;
+}
+
+#grillainiciosesion{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "formulario formulario"
+    "formulario formulario"
+    "footeriniciosesion footeriniciosesion";
+    grid-template-rows: 21% 38% 20%;
+    grid-template-columns: 100%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: auto;
+}
+
+#header{
+    grid-area: header;
+    grid-template-rows: 300px;
+}
+
+#productos{
+    grid-area: productos;
+    display:grid; 
+    grid-template-columns: 150px 200px 150px 200px 150px 200px;
+    grid-template-rows: 200px 200px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+#productos2{
+    grid-area: productos2;
+    display:grid; 
+    grid-template-columns: none 50% 50%;
+    grid-template-rows: none 100px;
+    margin-top: 10px;
+    width: auto;
+}
+
+#footerindex{
+    grid-area: footerindex;
+    display: grid;
+    margin-top: 20px;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+}
+ 
+#productos3{
+    grid-area: productos3;
+    display: grid; 
+    grid-template-columns: none 25%;
+    grid-template-rows: none 200px;
+    align-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#destacados{
+    grid-area: destacados;
+    display: grid; 
+    grid-template-columns: none 50%;
+    grid-template-rows: none 50px;
+    margin-top: 500px;
+    width: 200%;
+    height: auto;
+}
+
+#footerprod{
+    grid-area: footerprod;
+    display: grid;
+    margin-top: 870px;
+}
+
+#contacto{
+    grid-area: contacto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+#footercontacto{
+    grid-area: footercontacto;
+    display: grid;
+    margin-top: 3px;
+}
+
+#formulario{
+    grid-area: formulario;
+    display: grid;
+}
+
+#footeriniciosesion{
+    grid-area: footeriniciosesion;
+    display: grid;
+}
+
+#nosotros{
+    grid-area: nosotros;
+    display: grid;
+}
+
+#ubicacion{
+    grid-area: ubicacion;
+    display: grid;
+}
+
+#footernosotros{
+    grid-area: footernosotros;
+    display: grid;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width:1024px) {
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "productos productos"
+        "productos2 productos2"
+        "footerindex footerindex";
+        grid-template-rows: 100px auto auto auto auto auto auto auto 75px;
+        grid-template-columns: 20% auto 15%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #grillaproductos{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "productos3 productos3"
+        "destacados destacados"
+        "footerprod footerprod";
+        grid-template-rows: 100px 25% 25% 25% 25% 25% 25% 75px;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: 880vh;
+        width: auto;
+    }
+
+    #grillacontacto{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "contacto contacto"
+        "footercontacto footercontacto";
+        grid-template-rows: 25% 60% 15%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: auto;
+    }
+
+    #grillainiciosesion{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "formulario formulario"
+        "formulario formulario"
+        "footeriniciosesion footeriniciosesion";
+        grid-template-rows: 21% 38% 20%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: auto;
+    }
+
+    #grillanosotros{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nosotros nosotros"
+        "ubicacion ubicacion"
+        "footernosotros footernosotros";
+        grid-template-rows: 20% 45% 20%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: auto;
+    }    
+
+
+
+}
+
+@media only screen and (max-width:768px) {
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "productos"
+        "productos2"
+        "footerindex";
+        grid-template-rows: 50% auto auto 10%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    #header{
+        grid-area: header;
+        grid-template-rows: 200px;
+        display: flexbox;
+    }
+
+    #productos{
+        grid-area: productos;
+        display: flexbox; 
+        grid-template-columns: 100px;
+        grid-template-rows: 200px;
+        margin-top: 1000px;
+        margin-bottom: 10px;
+    }
+
+    #productos2{
+        grid-area: productos2;
+        display: grid; 
+        grid-template-columns: 500px;
+        grid-template-rows: 50px;
+        text-align: center;
+    }
+
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+        align-items: inherit; 
+    }
+
+    #grillaproductos{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "productos3"
+        "destacados"
+        "footerprod";
+        grid-template-rows: 30% 90% 10% 10%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        align-content: center;
+    }
+
+    #productos3{
+        grid-area: productos3;
+        display: grid; 
+        grid-template-columns: 400px;
+        grid-template-rows: 200px;
+        align-content: center;
+        align-items: center;
+        height: 8000px;
+    }
+    
+    #destacados{
+        grid-area: destacados;
+        display: grid;
+        grid-template-columns: 900px;
+        grid-template-rows: none 200px 200px; 
+    }
+
+    #footerprod{
+        grid-area: footerprod;
+        display: grid;
+        
+    }
+
+    #grillacontacto{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "formulario"
+        "footercontacto";
+        grid-template-rows: 40% 50% 20%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+
+    #contacto{
+        grid-area: contacto;
+        display: grid;
+        width: max-content;
+        align-items: center;
+        
+    }
+
+    #grillainiciosesion{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "formulario"
+        "formulario"
+        "footeriniciosesion";
+        grid-template-rows: 34% 35% 20%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: auto;
+    }
+
+    #formulario{
+        grid-area: formulario;
+        display: grid;
+        width: max-content;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    #grillanosotros{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nosotros"
+        "ubicacion"
+        "footernosotros";
+        grid-template-rows: 39% 32% 20%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: auto;
+        text-align: center;
+    }
+
+    #nosotros{
+        grid-area: nosotros;
+        display: grid;
+        grid-template-columns: 410px;
+        margin-left: 10px;
+    
+    }
+    
+    #ubicacion{
+        grid-area: ubicacion;
+        display: grid;
+        width: 500px;
+        margin-left: -8px;    
+     
+    }
+
+    
+}
+
+@keyframes flash {
+    10% {
+      opacity: 0;
+    }
+     100%
+     {
+      opacity: 1;
+    }
+  }
+
+  .animate__flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+
+  @keyframes shakeY {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    
+    80% {
+      -webkit-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+    }
+  
+    10% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+  }
+  .animate__shakeY {
+    -webkit-animation-name: shakeY;
+    animation-name: shakeY;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .animate__pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+
+  } 
+
+  @keyframes bounce {
+    from,
+    20%,
+    53%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+      transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+      transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+  }
+  .animate__bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+
+  
+.efectovideo{
+    box-shadow: 1px 1px 36px 2px #8b8c89;
+
+}
+
+

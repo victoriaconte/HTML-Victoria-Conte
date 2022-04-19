@@ -1,0 +1,15 @@
+$tipografia-general: 'Trebuchet MS', x-large;
+
+header{
+    text-align: center;
+    font-family: $tipografia-general;
+    text-transform: uppercase;  
+}
+
+header, footer {
+    background-image: url(../Imagenes/fondo.jpg);
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: cover;
+    height: 125px;
+}
