@@ -1,21 +1,6 @@
 @import "estructura";
+@import "animaciones";
 
-header ul li {
-    background-color: #8b8c89;
-    font-size: large;
-    text-transform: none;
-}
-
-footer ul li {
-    display: block;
-    font-size: 15px;
-    padding: 1px;
-    text-transform: none;
-    text-align: right;
-}
-
-*{list-style-type: none;
-}
 
 .logo{
     align-content: center;
@@ -30,18 +15,6 @@ footer ul li {
     text-align: right;
 }
 
-body h3 {
-    font-style: oblique;
-    text-align: center;
-    color: #e7ecef;
-    font-size: 23px;
-    background-color: #274c77;
-    text-transform: uppercase;
-    margin-bottom: 1%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: underline;
-}
-
 body section {
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -49,117 +22,99 @@ body section {
 
 footer h4 {
     color: #e7ecef;
+    font-size: 20px;    
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
 }
-
-
-
-@keyframes flash {
-    10% {
-      opacity: 0;
-    }
-     100%
-     {
-      opacity: 1;
-    }
-  }
-
-  .animate__flash {
-    -webkit-animation-name: flash;
-    animation-name: flash;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-  }
-
-  @keyframes shakeY {
-    from,
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-    
-    80% {
-      -webkit-transform: translate3d(0, -5px, 0);
-      transform: translate3d(0, -5px, 0);
-    }
-  
-    10% {
-      -webkit-transform: translate3d(0, 5px, 0);
-      transform: translate3d(0, 5px, 0);
-    }
-  }
-  .animate__shakeY {
-    -webkit-animation-name: shakeY;
-    animation-name: shakeY;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-  }
-
-  @keyframes pulse {
-    from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-  
-    to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-
-  .animate__pulse {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-
-  } 
-
-  @keyframes bounce {
-    from,
-    20%,
-    53%,
-    to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    80% {
-      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
-      transform: translate3d(0, 0, 0) scaleY(0.95);
-    }
-  
-    90% {
-      -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-      transform: translate3d(0, -4px, 0) scaleY(1.02);
-    }
-  }
-  .animate__bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-  }
 
   .tachado {
     text-decoration: line-through;
     text-decoration-color: #8b8c89;
   }
 
-  
+  $estilo: (
+    color: #274c77,  
+    centro: center,
+  );
 
-  
+  body h3 {
+    background-color: map-get($estilo, color);
+    text-align: map-get($estilo, centro);
+    font-style: oblique;
+    color: #e7ecef;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+  }
 
+  h1 {
+    background-color: map-get($estilo, color);
+    text-align: map-get($estilo, centro);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;  
+    border-radius: 40px;
+    color: #e7ecef;
+  }
+
+  body p{
+    font-size: 20px;
+    margin: 3px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+form{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 30px;
+  font-style: italic;
+  text-align: center;
+  word-spacing: 10px;
+  background-image: url(../Imagenes/fondo.jpg);
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: cover;
+}
+
+#ubicacion{
+  border: #274c77 solid;
+  margin: 10px;
+}
+
+.videos {
+  position: relative;
+  overflow: hidden;
+}
+
+.centrado {
+  text-align: center;  
+}
+
+@mixin container ($ancho, $alto) {
+ width: $ancho;
+ height: $alto;
+}
+
+.boxuno{
+  @include container (100%, 123px)
+}
+.boxdos{
+  @include container (100%, 100px)
+}
+
+.boton {
+  background-color: white;
+  text-align: center;
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.botonrestablecer {
+  @extend .boton;
+  background-color: #75B3FF;
+}
 

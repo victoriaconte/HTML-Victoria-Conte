@@ -11,5 +11,23 @@ header, footer {
     background-repeat: repeat-x;
     background-position: center center;
     background-size: cover;
-    height: 125px;
 }
+
+header ul li {
+    background-color: #8b8c89;
+    font-size: large;
+    text-transform: none;
+}
+
+footer ul li {
+    display: block;
+    font-size: 15px;
+    padding: 1px;
+    text-transform: none;
+    text-align: right;
+}
+
+*{list-style-type: none;
+}
+
+  
