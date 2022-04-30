@@ -1,0 +1,177 @@
+
+@media only screen and (max-width:768px) {
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "productos"
+        "productos2"
+        "footerindex";
+        grid-template-rows: 50% auto auto 10%;
+        grid-template-columns: 100%;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+        #header{
+            grid-area: header;
+            grid-template-rows: 200px;
+            display: flexbox;
+        }
+    
+        #productos{
+            grid-area: productos;
+            display: flexbox; 
+            grid-template-columns: 100px;
+            grid-template-rows: 200px;
+            margin-top: 80px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            padding: 10px;
+        }
+    
+        #productos2{
+            grid-area: productos2;
+            display: grid; 
+            grid-template-columns: 500px;
+            grid-template-rows: 50px;
+            text-align: center;
+        }
+
+        #footerindex{
+            grid-area: footerindex;
+            grid-template-rows: 200px;
+            display: flexbox;
+        }
+
+        #grillanosotros{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "nosotros"
+            "ubicacion"
+            "footernosotros";
+            grid-template-rows: 48% 40% 30% 20%;
+            grid-template-columns: 100%;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            height: auto;
+            text-align: center;
+        }
+    
+        #nosotros{
+            grid-area: nosotros;
+            display: grid;
+            grid-template-columns: 400px;
+            text-align: center;
+        
+        }
+        
+        #ubicacion{
+            grid-area: ubicacion;
+            display: grid;
+            align-content: center;
+        }
+
+        #footernosotros{
+            grid-area: footernosotros;
+            grid-template-rows: 200px;
+            display: flexbox; 
+        }
+
+        #grillaproductos{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "productos3"
+            "destacados"
+            "footerprod";
+            grid-template-rows: 40 80 20 20;
+            grid-template-columns: 100%;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            align-content: center;
+        }
+
+        #header{
+            grid-area: header;
+            grid-template-rows: 200px;
+            display: flexbox;
+        }
+    
+        #productos3{
+            grid-area: productos3;
+            display: grid; 
+            grid-template-columns: 400px;
+            grid-template-rows: 200px;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #destacados{
+            grid-area: destacados;
+            display: flexbox;
+            grid-template-columns: 400px;
+            grid-template-rows: none 200px 200px; 
+        }
+
+        #footerprod{
+            grid-area: footerprod;
+            grid-template-rows: 200px;
+            display: flexbox;
+        }
+        
+        #grillacontacto{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "contacto"
+            "footercontacto";
+            grid-template-rows: 20% 70% 20%;
+            grid-template-columns: 100%;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+        }
+    
+        #contacto {
+            grid-area: contacto;
+            display: flexbox;
+            grid-template-columns: 100px;
+            grid-template-rows: 200px;
+            margin-top: 200px;
+            margin-bottom: 100px;
+            }
+
+        #footercontacto{
+            grid-area: footercontacto;
+            grid-template-rows: 200px;
+            display: flexbox;
+        }
+
+        #grillainiciosesion{
+            display: grid;
+            grid-template-areas: 
+            "header"
+            "formulario"
+            "formulario"
+            "footeriniciosesion";
+            grid-template-rows: 30% auto 20%;
+            grid-template-columns: 100%;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+        }
+
+        #formulario{
+            grid-area: formulario;
+            display: flexbox;
+            grid-template-columns: 100px;
+            grid-template-rows: 200px; 
+            width: min-content;
+  
+        }
+
+    }
